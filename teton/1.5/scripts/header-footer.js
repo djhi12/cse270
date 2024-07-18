@@ -10,10 +10,4 @@ function toggleMenu(){
 }
 
 // Attach click listener to the hamburger menu
-document.querySelector("#hamburger-menu").addEventListener('click', toggleMenu);
-
-let cd = document.querySelector("#currentdate");
-
-if (cd != null){
-    cd.value = new Intl.DateTimeFormat("en-US").format(new Date())
-}
+document.querySelector("#hamburger-menu").addEventListener('click', toggleMenu)

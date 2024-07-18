@@ -6,13 +6,11 @@ async function login(username, password) {
         sessionStorage.setItem("username", username);
         showhidelogin();
     } else {
-        console.error(`Could not log in with ${username} and ${password}`, error);
         const errormsg = document.querySelector(".errorMessage");        
         errormsg.innerText = "Invalid username and password.";
     }
     }
     catch (error){
-      console.error(`Could not log in with ${username} and ${password}`, error);
       const errormsg = document.querySelector(".errorMessage");        
       errormsg.innerText = "Invalid username and password.";   
     }
